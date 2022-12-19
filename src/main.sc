@@ -4,17 +4,21 @@ theme: /
 
     state: Start
         q!: $regex</start>
-        a: Let's start.
+        a: start
 
-    state: Hello
-        intent!: /hello
-        a: Hello hello
-
-    state: Bye
-        intent!: /bye
-        a: Bye bye
-
-    state: NoMatch
+    state: /hello
+        q!: [* *ello */* hi */ *ood (morning/afternoon/evening)/* Hi]
+        a: sap
+    
+    state: /weather
+        q!: * weather *
+        a: sd
+    
+    state: /currency
+        q!: * *urrency *
+        a: 1 EUR = 73.28 RUB
+        
+    state: /NoMatch
         event!: noMatch
         a: I do not understand. You said: {{$request.query}}
 
