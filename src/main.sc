@@ -11,7 +11,7 @@ theme: /
         a: sap
     
     state: /weather
-        q!: * weather *
+        q!: * *eather *
         a: sd
     
     state: /currency
