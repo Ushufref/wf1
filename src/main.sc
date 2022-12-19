@@ -6,13 +6,15 @@ theme: /
         q!: $regex</start>
         a: start
 
-    
-    
+    state: /hello
+        q!: [* *ello */* hi */ *ood (morning/afternoon/evening)/* Hi
+        a: sap
+        
     state: /weather
         q!: * *eather *
         a: sd
     
-    state: /currency
+    stae: /currency
         q!: * *urrency *
         a: 1 EUR = 73.28 RUB
         
