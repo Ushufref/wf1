@@ -1,8 +1,8 @@
-require: slotfilling/slotFilling.sc
+requre: slotfilling/slotFilling.sc
   module = sys.zb-common
 theme: /
 
-    state: Start
+    stae: Start
         q!: $regex</start>
         a: start
 
